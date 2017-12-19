@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2:600i|Overpass+Mono|Russo+One|Work+Sans');
+
+
+body {
+    width:100vw;
+    background-color:lightblue;
+    margin: 0;
+    overflow-x:hidden;
+}
+
+.container {
+    width: 100%;
+    margin:auto;
+}
+
+header {
+    background-image: url("../images/ottergram_new.jpg");
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-position: center;
+    width:100%;
+    min-height:745px;
+    height:100vh;
+
+}
+#headerContent {
+    margin: 0 auto;
+    width: 100%;
+}
+
+nav {
+    background-color: white;
+    height:63px;
+    text-align: center;
+    width:100%;
+    position: fixed;
+    z-index: 9999;
+}
+
+nav.shrink{
+    min-height: 34px;
+}
+a {
+   color:black;
+    padding-left:35px;
+    padding-right:35px;
+    font-family: 'Overpass Mono', monospace;
+    text-decoration: none;
+}
+.logo {
+    width:100px;
+    margin-top: -12px;
+}
+img{
+    max-width: 200px;
+}
+#modal-content {
+    max-width:420px;
+    margin:auto;
+    background: white;
+    border-bottom: solid 2px black;
+}
+#modal-img {
+max-width: 400px;
+    max-height: 410px;
+    border: 10px solid white;
+}
+
+.modal-canvas {
+     max-width: 420px;
+     margin: auto;
+     background-color: azure;
+ }
+
+#imgText {
+    font-family: 'Overpass Mono', monospace;
+    margin-bottom:10px;
+}
+
+#closingtag:hover {
+    cursor: pointer;
+}
+#closingtag {
+    margin-bottom: 0;
+}
+.fa-remove:before, .fa-close:before, .fa-times:before {
+    font-size:30px;
+}
+
+footer {
+    padding-top: 20px;
+    height:51px;
+    background-color: lightseagreen;
+    text-align: center;
+    color:white;
+    font-family: 'Overpass Mono', monospace;
+    font-size: x-large;
+
+}
+h2, h1 {
+    font-family: 'Work Sans', sans-serif;
+}
+figcaption {
+    font-family: 'Exo 2', sans-serif;
+}
+.bannerLi {
+    display: inline;
+}
+.banner {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display:inline-block;
+    vertical-align: 50px;
+}
+.righty {
+    float:right;
+}
+.lefty {
+    float:left;
+}
+
+figure {
+    display: inline-block;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    list-style: none;
+}
+
+li {
+    display: inline;
+    list-style:none;
+}
+
+.photoPlace img:hover {
+   transition: 0.3s;
+    box-shadow: 6px 6px 10px rgba(0,0,0,0.5);
+}
+
+.photoPlace {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.photo {
+    border: solid 8px white;
+    border-bottom-left-radius: 10px;
+}
+
+.middlepart {
+    background-color: lightcyan;
+}
+
+.middlepart p {
+    font-size: 18px;
+    font-family: 'Overpass Mono', monospace;
+    padding: 0 90px 20px 90px;
+}
+
+.middlepart h2 {
+    text-align: center;
+}
+.first {
+    background-color: darkslategrey;
+    background-size: 100px;
+    white-space: pre-line;
+}
+
+.fun h4 {
+    margin-right: 15px;
+    padding-left: 5px;
+    text-align: center;
+    color:white;
+    font-size: 22px;
+
+}
+
+.fun h4:hover{
+    color:lightgrey;
+    cursor: pointer;
+}
+
+.fun p{
+    display:none;
+    font-size: 14px;
+    font-family:'Work Sans', sans-serif;
+    font-style: italic;
+    text-align: center;
+    margin-top: -30px;
+    position: static;
+    margin-right:5px;
+
+}
+
+.info {
+    margin-top: -10px;
+    text-align: center;
+    font-style: italic;
+}
+
+.card {
+    width: 14%;
+    margin-left: 70px;
+    margin-right: 20px;
+   background-color:white;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    margin-bottom: 30px;
+    display:inline-block;
+}
+
+#puns {
+    text-align: center;
+}
+
+.part {
+    background-color: lightskyblue;
+    text-align:center;
+}
+
+iframe {
+    margin-left: 30px;
+    margin-bottom: 20px;
+    border: 0 transparent;
+    width: 560px;
+    height: 337px;
+}
+
+.youtube {
+    width: 100px;
+    height: 100px;
+}
+
+#galleryText {
+    text-align: center;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 240px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    text-align: center;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.6);
+}
+
+#prevImg {
+    color:white;
+    font-size: 59px;
+    text-transform: uppercase;
+    margin: 0;
+    position: absolute;
+    top: 35%;
+    left: 32%;
+    transform: translate(-50%, -50%);
+}
+#nextImg {
+    color:white;
+    font-size: 59px;
+    text-transform: uppercase;
+    margin: 0;
+    position: absolute;
+    top: 35%;
+    left: 67%;
+    transform: translate(-50%, -50%);
+}
+
+#prevImg:hover {
+    cursor: pointer;
+    color:rgba(255,255,255,0.9);
+}
+
+#nextImg:hover {
+    cursor: pointer;
+    color: white;
+    color:rgba(255,255,255,0.9);
+}
+
+.imgArrow {
+    background-color: transparent;
+    border:none;
+}
+.imgArrow:focus {
+    outline: solid transparent;
+}
+.imgArrow:active {
+    border:none;
+}
+
+#fb-like-button{
+    padding-bottom: 10px;
+    margin-top:-5px;
+}
+
+#fb-comments-middle {
+    margin: 0 auto;
+    width: 587px;
+}
+
+#obLogo {
+    max-width:500px;
+    padding-left: 51px;
+}
+/*
+----------------------------------- EXTRA PÅHITT ----------------------------------------------------------------------
+*/
+
+nav a.txt::before,
+nav a.txt::after {
+    display: inline-block;
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+    transition: transform 0.3s, opacity 0.2s;
+}
+
+nav a.txt::before {
+    margin-right: 5px;
+    font-family: 'OtterFam', sans-serif;
+    content: 'G';
+    font-size: 32px;
+    -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    transform: translateX(20px);
+    color: #01baef;
+}
+nav a.txt::after {
+    margin-left: 5px;
+    font-size: 32px;
+    font-family: OtterFam, sans-serif;
+    content: '@';
+    -webkit-transform: translateX(-20px);
+    -moz-transform: translateX(-20px);
+    transform: translateX(-20px);
+    color: #01baef;
+}
+
+nav a.txt:hover::before,
+nav a.txt:hover::after,
+nav a.txt:focus::before,
+nav a.txt:focus::after {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    transform: translateX(0px);
+}
+
+/*
+-----------------------------------------------------------------------------------------------------------------------
+*/
+
+.arrow {
+    position: relative;
+}
+.arrow:after, .arrow:before {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+
+}
+
+.arrow:after {
+    border-top-color: darkslategrey;
+    border-width: 17px;
+    margin-left: -19px;
+}
+.arrow:before {
+    border-width: 36px;
+    margin-left: -36px;
+}
+
+
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-load {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background: url("../images/loadingsrc.gif") center no-repeat #FFFFFF;
+}
+
+/*
+-----------------------------------------------------------------------------------------------------------------------
+ */
+
+/*
+* Fixed for bigger screens
+*/
+@media (min-width:1800px){
+    #nextImg {
+        left: 65%;
+    }
+
+    #prevImg {
+        left: 35%;
+    }
+
+    .photoPlace {
+        margin-left: 118px;
+        margin-right: 118px;
+    }
+}
+
+/*
+* Fixed for school computer(smallfixes)
+*/
+@media (max-width:1400px) {
+    .modal {
+        padding-top: 107px;
+    }
+    #nextImg {
+        top: 44%;
+        left: 70%;
+    }
+    #prevImg {
+        top: 44%;
+        left: 30%;
+    }
+}
+
+/*
+* Fixes
+ */
+
+@media(max-width: 1284px) {
+    nav {
+        text-align: left;
+    }
+
+    .bannerLi {
+        margin-right: -77px;
+    }
+}
+
+/*
+* Custom font for nav
+*/
+@font-face {
+    font-family: OtterFam;
+    src: url("../customfont/animal.ttf");
+    font-weight:400;
+}
+
+

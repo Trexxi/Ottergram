@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ottergram</title>
+    <link href="style/ottergram.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/font-awesome.min.css">
+    <script src="script/jquery-3.1.1.min.js"></script>
+
+    <script>
+        $(window).on('load',function(){
+            $(".se-pre-load").fadeOut("slow");
+        });
+    </script>
+</head>
+
+<body>
+<!-- FB SDK-->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/sv_SE/sdk.js#xfbml=1&version=v2.8";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Loading Screen -->
+<div class="se-pre-load"></div>
+
+<!-- PhotoView(Lightbox)-->
+<div class="modal">
+    <div class="modal-canvas">
+        <a><p id="closingtag" class="close fa fa-times"></p></a>
+            <div id="modal-content">
+             <button class ="fa fa-arrow-circle-left imgArrow" id="prevImg"></button>
+                <button class="fa fa-arrow-circle-right imgArrow" id="nextImg"></button>
+                     <img id="modal-img" src="#" alt="modal image"/>
+                        <p id="imgText"></p>
+                            <div id ="fb-like-button" class="fb-like" data-href="https://trexxi.github.io/ou12-lightbox/"
+                         data-width="30px" data-layout="button_count" data-action="like" data-show-faces="false"
+                            data-share="false"></div>
+            </div>
+    </div>
+</div>
+
+<div class="container">
+    <header>
+    <div class ="headerContent" id="firstPage">
+    <nav>
+        <ul class="banner">
+            <li class="bannerLi"><a href="#gallery" class="txt">Uttrarna</a></li>
+            <li class="bannerLi"><a href="#puns" class="txt">Utter-rastic!</a></li>
+        </ul>
+       <a href="#firstPage"><img class="logo" src="images/otter_logo.png" alt="Utterlogo" /></a>
+        <ul class="banner">
+          <li class="bannerLi"><a href="#video" class="txt">Otter-vid</a></li>
+           <li class="bannerLi"><a href="#fb-comments" class="txt">Otter-book</a></li>
+       </ul>
+    </nav>
+        </div>
+</header>
+
+    <!-- PhotoGallery -->
+    <h1 id="galleryText">Selfie uttrarna</h1>
+    <div class="photoPlace" id="gallery">
+
+    <ul>
+        <li>
+            <figure class="photoFig">
+                <img class="photo" src="images/bertil-blotnos.jpg" alt="Bertil Blötnos">
+              <figcaption>Bertil Blötnos</figcaption>
+            </figure>
+        </li>
+
+        <li>
+            <figure class="photoFig">
+                <img class="photo" src="images/fransmannen-flodhest.jpg" alt="Fransmannen Flo D'hest">
+                 <figcaption>Fransmannen Flo D'hest</figcaption>
+            </figure>
+        </li>
+
+        <li>
+            <figure class="photoFig">
+                <img class="photo" src="images/harriet.jpg" alt="Harriet">
+                 <figcaption>Harriet</figcaption>
+            </figure>
+        </li>
+
+        <li>
+            <figure class="photoFig">
+                <img class="photo" src="images/harry-otter.jpg" alt="Harry Otter">
+                 <figcaption>Harry Otter</figcaption>
+            </figure>
+        </li>
+
+        <li>
+            <figure class="photoFig">
+                <img class="photo" src="images/kent.jpg" alt="Kent">
+                 <figcaption>Kent</figcaption>
+            </figure>
+        </li>
+
+        <li>
+            <figure class="photoFig">
+                <img class="photo" src="images/lill-erik.jpg" alt="Lill-Erik">
+                 <figcaption>Lill-Erik</figcaption>
+            </figure>
+        </li>
+
+        <li>
+            <figure class="photoFig">
+                <img class="photo" src="images/staffan-och-bengt.jpg" alt="Staffan och Bengt">
+                 <figcaption>Staffan och Bengt</figcaption>
+            </figure>
+        </li>
+
+        <li>
+            <figure class="photoFig">
+                <img class="photo" src="images/trak-sivert.jpg" alt="Tråk-Sivert">
+                 <figcaption>Tråk-Sivert</figcaption>
+            </figure>
+        </li>
+
+        <li>
+            <figure class="photoFig">
+                <img class="photo" src="images/derek.jpg" alt="Derek">
+                 <figcaption>Derek</figcaption>
+            </figure>
+        </li>
+
+        <li>
+            <figure class="photoFig">
+                <img class="photo" src="images/drew.jpg" alt="Drew">
+                 <figcaption>Drew</figcaption>
+            </figure>
+        </li>
+
+        <li>
+            <figure class="photoFig">
+                <img class="photo" src="images/hoge-jack.jpg" alt="Höge Jack">
+                 <figcaption>Höge Jack</figcaption>
+            </figure>
+        </li>
+
+        <li>
+            <figure class="photoFig">
+                <img class="photo" src="images/statlige-stan.jpg" alt="Ståtlige Stan">
+                 <figcaption>Ståtlige Stan</figcaption>
+            </figure>
+        </li>
+
+        <li>
+            <figure class="photoFig">
+                <img class="photo" src="images/ylve-wolf.jpg" alt="Ylve Wolf">
+                 <figcaption>Ylve Wolf</figcaption>
+            </figure>
+        </li>
+
+    </ul>
+
+</div>
+
+    <!-- Some middle text -->
+    <div class="middlepart">
+
+        <h2> Utter Mathafacka </h2>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer molestie lorem turpis, nec rutrum lacus
+            mattis sit amet. In hac habitasse platea dictumst. Phasellus sit amet nibh erat. Fusce semper convallis
+            orci, eu tristique ante facilisis quis. Vivamus euismod dui sed libero auctor sagittis. In felis libero,
+            fringilla venenatis molestie consectetur, bibendum at ligula. Fusce et sodales lorem. Suspendisse nisi
+            tellus, ultricies ac venenatis eu, rutrum non elit. Donec elit sem, interdum eu dictum quis</p>
+
+    </div>
+
+    <!-- Pun list -->
+    <div class="fun">
+
+    <h1 id="puns">Utter-rastic!</h1>
+        <h5 class="info">Tryck på frågan för att få fram svaret!</h5>
+
+        <div class="card">
+            <div class="first arrow">
+                <h4>Var kommer uttrarna ifrån?</h4>
+            </div>
+            <p>Uttre världsrymden.</p>
+        </div>
+
+        <div class="card ">
+            <div class="first arrow">
+                <h4>Vad klär sig uttrarna i?</h4>
+            </div>
+            <p>Utterrockar.</p>
+        </div>
+
+        <div class="card">
+            <div class="first arrow">
+                <h4>Vad äter uttrar?</h4>
+            </div>
+            <p>Morutter.</p>
+        </div>
+
+        <div class="card">
+            <div class="first arrow">
+                <h4>Vad gör en sur utter?</h4>
+            </div>
+            <p>Den (m)uttrar.</p>
+        </div>
+
+        <div class="card">
+            <div class="first arrow">
+                <h4>Vad gör uttrarnas poliser?</h4>
+            </div>
+            <p>De uttreder fall.</p>
+        </div>
+
+        <div class="card">
+            <div class="first arrow">
+                <h4>Vilken är uttrarnas favoritTVserie?</h4>
+            </div>
+            <p>Futterama.</p>
+        </div>
+
+        <div class="card">
+            <div class="first arrow">
+                <h4>Vad kallas en utter som gillar att resa?</h4>
+            </div>
+            <p>En globetrutter.</p>
+        </div>
+
+        <div class="card">
+            <div class="first arrow">
+                <h4>Hur ser man att en utter inte är glad?</h4>
+            </div>
+            <p>Den är butter.</p>
+        </div>
+
+        <div class="card">
+            <div class="first arrow">
+                <h4>Hur räknar uttrar tid?</h4>
+            </div>
+            <p>I minutter.</p>
+        </div>
+
+        <div class="card">
+            <div class="first arrow">
+                <h4>Kallar man en utter som jämt har sönder allting?</h4>
+            </div>
+            <p>Kaputter</p>
+        </div>
+
+        <div class="card">
+            <div class="first arrow">
+                <h4>Kallar man en slampig utter?</h4>
+            </div>
+            <p>Slutter</p>
+        </div>
+
+    </div>
+
+    <!-- Youtube -->
+    <div class="part" id="video">
+
+        <h1>Utter-Videos</h1>
+        <iframe id="youtube" src="https://www.youtube.com/embed/yKy0XEAwDnk"
+                allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/ptkytDOVFN0"
+                allowfullscreen></iframe>
+    </div>
+
+    <!-- FB comment-->
+    <div class="middlepart" id="fb-comments">
+
+        <h2> Otter-book</h2>
+            <h4 class="info">Skriv till alla dina utter-följare om din utter-rastica upplevelse på sidan</h4>
+        <div id="fb-comments-middle">
+            <img id ="obLogo" src="images/otter-book.png" alt="Otterbook"/>
+                <div class="fb-comments" data-href="https://trexxi.github.io/ou12-lightbox/#gallery"
+                    data-numposts="3"></div>
+        </div>
+    </div>
+
+</div>
+<script src="script/app.min.js"></script>
+<footer>&copy; Teddy Li</footer>
+</body>
+</html>
